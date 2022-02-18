@@ -16,7 +16,7 @@ export class TuiManualHintDirective extends AbstractTuiHint {
 
     @Input()
     @tuiRequiredSetter()
-    set tuiManualHintShow(show: boolean | null) {
+    set tuiManualHintShow(show: boolean) {
         if (show) {
             this.showTooltip();
         } else {

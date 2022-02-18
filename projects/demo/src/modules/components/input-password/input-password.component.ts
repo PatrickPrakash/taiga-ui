@@ -42,7 +42,7 @@ export class ExampleTuiInputPasswordComponent extends AbstractExampleTuiControl 
         'current-password',
     ];
 
-    autocomplete: TuiAutofillFieldName | null = null;
+    autocomplete: TuiAutofillFieldName | '' = '';
 
     maxLength = null;
 

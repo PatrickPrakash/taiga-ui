@@ -123,7 +123,7 @@ export class ExampleTuiInputSliderComponent extends AbstractExampleTuiControl {
     keySteps: TuiKeySteps | null = null;
 
     readonly autocompleteVariants: TuiAutofillFieldName[] = ['off', 'transaction-amount'];
-    autocomplete: TuiAutofillFieldName | null = null;
+    autocomplete: TuiAutofillFieldName | '' = '';
 
     readonly customContentVariants: string[] = [
         'tuiIconVisaMono',

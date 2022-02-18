@@ -27,7 +27,7 @@ export class TuiTextfieldController {
         private readonly typeDirective: TuiTextfieldTypeDirective,
     ) {}
 
-    get autocomplete(): TuiAutofillFieldName | '' | null {
+    get autocomplete(): TuiAutofillFieldName | '' {
         return this.autocompleteDirective.autocomplete;
     }
 

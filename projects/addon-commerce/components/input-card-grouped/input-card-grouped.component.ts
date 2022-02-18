@@ -407,10 +407,10 @@ export class TuiInputCardGroupedComponent
         this.focusInput();
     }
 
-    onScroll(event: Event) {
-        tuiAssertIsHTMLElement(event.currentTarget);
+    onScroll({currentTarget}: Event) {
+        tuiAssertIsHTMLElement(currentTarget);
 
-        event.currentTarget.scrollLeft = 0;
+        currentTarget.scrollLeft = 0;
     }
 
     clear() {

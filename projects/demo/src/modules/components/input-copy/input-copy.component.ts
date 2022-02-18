@@ -53,7 +53,7 @@ export class ExampleTuiInputCopyComponent extends AbstractExampleTuiControl {
         'country-name',
     ];
 
-    readonly autocomplete: TuiAutofillFieldName | null = null;
+    readonly autocomplete: TuiAutofillFieldName | '' = '';
 
     readonly maxLength = null;
 

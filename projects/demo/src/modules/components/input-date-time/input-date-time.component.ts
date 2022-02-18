@@ -61,7 +61,7 @@ export class ExampleTuiInputDateTimeComponent extends AbstractExampleTuiControl 
         'value-transformer.ts': import('!!raw-loader!./examples/4/value-transformer.ts'),
     };
 
-    readonly minVariants: [TuiDay, TuiDay, TuiDay, [TuiDay, TuiTime]] = [
+    readonly minVariants: ReadonlyArray<TuiDay | [TuiDay, TuiTime]> = [
         TUI_FIRST_DAY,
         new TuiDay(2017, 2, 5),
         new TuiDay(1900, 0, 1),
@@ -104,7 +104,7 @@ export class ExampleTuiInputDateTimeComponent extends AbstractExampleTuiControl 
 
     readonly autocompleteVariants: TuiAutofillFieldName[] = ['off', 'bday'];
 
-    autocomplete: TuiAutofillFieldName | null = null;
+    autocomplete: TuiAutofillFieldName | '' = '';
 
     cleaner = false;
 

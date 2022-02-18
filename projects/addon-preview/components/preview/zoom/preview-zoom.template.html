@@ -14,7 +14,7 @@
             tuiHintDirection="top-right"
             class="t-ghost-dot"
             [tuiManualHint]="hint"
-            [tuiManualHintShow]="hintShow$ | async"
+            [tuiManualHintShow]="(hintShow$ | async) || false"
             [style.left.px]="ghostLeft"
         ></div>
         <ng-template #hint>

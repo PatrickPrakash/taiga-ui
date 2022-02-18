@@ -106,7 +106,7 @@ export class ExampleTuiInputDateComponent extends AbstractExampleTuiControl {
 
     autocompleteVariants: TuiAutofillFieldName[] = ['off', 'bday'];
 
-    autocomplete: TuiAutofillFieldName | null = null;
+    autocomplete: TuiAutofillFieldName | '' = '';
 
     cleaner = false;
 

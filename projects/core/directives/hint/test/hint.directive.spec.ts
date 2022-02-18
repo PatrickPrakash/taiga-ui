@@ -8,9 +8,9 @@ import {
 } from '@angular/core/testing';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {tuiAssertIsHTMLElement} from '@taiga-ui/cdk';
+import {TuiRootModule} from '@taiga-ui/core';
 import {configureTestSuite} from '@taiga-ui/testing';
 
-import {TuiRootModule} from '../../../components/root/root.module';
 import {TuiHintModule} from '../hint.module';
 
 type Hint = string | TemplateRef<{}> | undefined | null;

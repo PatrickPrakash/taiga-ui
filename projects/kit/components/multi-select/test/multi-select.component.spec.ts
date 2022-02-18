@@ -9,14 +9,13 @@ import {
     TuiRootModule,
     TuiTextfieldControllerModule,
 } from '@taiga-ui/core';
+import {TuiMultiSelectModule} from '@taiga-ui/kit';
 import {
     TUI_ARROW_MODE,
     TuiDataListWrapperModule,
     TuiMultiSelectComponent,
 } from '@taiga-ui/kit/components';
 import {configureTestSuite, NativeInputPO, PageObject} from '@taiga-ui/testing';
-
-import {TuiMultiSelectModule} from '../multi-select.module';
 
 describe('MultiSelect', () => {
     describe('Basic', () => {

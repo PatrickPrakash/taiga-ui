@@ -9,11 +9,12 @@ export const tuiAssert = {
     },
 };
 
-export function tuiAssertIsHTMLElement(element: unknown): asserts element is HTMLElement {
-    const isElement =
-        element instanceof HTMLElement ||
-        element instanceof Element ||
-        element instanceof HTMLDocument;
+type PossibleNode = Node | Element | EventTarget | null;
 
-    tuiAssert.assert(isElement, 'Object is not HTML element');
+export function tuiAssertIsHTMLElement(node?: PossibleNode): asserts node is HTMLElement {
+    const document = (node as Node)?.ownerDocument;
+    const defaultView = document?.defaultView as unknown as {HTMLElement: typeof Node};
+    const isHTMLElement = node instanceof defaultView?.HTMLElement;
+
+    tuiAssert.assert(isHTMLElement, 'Node is not an HTMLElement');
 }

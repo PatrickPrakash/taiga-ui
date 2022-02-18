@@ -76,7 +76,7 @@ export class TuiActiveZoneDirective implements OnDestroy {
     }
 
     @tuiPure
-    private setZone(zone: TuiActiveZoneDirective | null | undefined) {
+    private setZone(zone: TuiActiveZoneDirective | null) {
         if (this.tuiActiveZoneParent) {
             this.tuiActiveZoneParent.removeSubActiveZone(this);
         }

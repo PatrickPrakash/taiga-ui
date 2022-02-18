@@ -62,7 +62,7 @@ export abstract class AbstractExampleTuiControl
 
     readonly maxLengthVariants: readonly possibleGenericType[] = [10];
 
-    readonly autocompleteVariants: (TuiAutofillFieldName | '' | null)[] = [
+    readonly autocompleteVariants: (TuiAutofillFieldName | '')[] = [
         '',
         'off',
         'cc-name',
@@ -94,7 +94,7 @@ export abstract class AbstractExampleTuiControl
 
     inputMode = this.inputModeVariants[0];
 
-    autocomplete: TuiAutofillFieldName | '' | null = null;
+    autocomplete: TuiAutofillFieldName | '' = '';
 
     maxLength: possibleGenericType | null = null;
 

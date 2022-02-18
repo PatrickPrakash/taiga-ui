@@ -55,7 +55,7 @@ export class ExampleTuiInputNumberComponent extends AbstractExampleTuiControl {
 
     readonly autocompleteVariants: TuiAutofillFieldName[] = ['off', 'transaction-amount'];
 
-    autocomplete: TuiAutofillFieldName | null = null;
+    autocomplete: TuiAutofillFieldName | '' = '';
 
     readonly decimalVariants: readonly TuiDecimalT[] = ['not-zero', 'always', 'never'];
 
