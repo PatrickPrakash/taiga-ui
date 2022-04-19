@@ -16,7 +16,7 @@ export class TuiDragState {
     constructor(readonly stage: TuiDragStage, readonly event: MouseEvent) {}
 }
 
-export function dragAndDropFrom(element: Element): Observable<TuiDragState> {
+export function dragAndDropFrom(element: Element): Observable<TuiDragState> | never {
     const {ownerDocument} = element;
 
     if (!ownerDocument) {
